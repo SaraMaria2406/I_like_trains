@@ -1,0 +1,35 @@
+ Débuter chaque run du code par cette ligne pour pouvoir jouer:
+ & C:/Users/alici/AppData/Local/Programs/Python/Python312/python.exe client/client.py 128.178.17.112
+
+Problème Windows: 
+& C:/Users/alici/AppData/Local/Programs/Python/Python312/python.exe -m 
+
+Start a local server for testing:
+You can start a local server by running python -m server if you want to test the client locally.
+This will start a server on 0.0.0.0:5555. Then, open another terminal, go to the project folder,
+and run python -m client config.json to connect to the local server.
+(ne pas oublier la ligne pour windows)
+
+A faire dans le code :
+- localiser les passagers et aller au plus près 
+- s'assurer que le train n'aille pas dans les murs
+- éviter les collisions
+- passer par l'arrêt pour déposer les perso
+- estimer les distances
+- avoir un max de personnages
+- bloquer l'autre joueur
+
+Tips given by the teachers:
+    For the agent:
+    - Display the attributes (with print or using the logger) to understand their structure (self.all_trains, self.all_passengers, self.delivery_zones, etc.).
+    - Start with changing the direction if the next position will hit a wall.
+    - Implement an initial strategy (e.g., go towards the closest passenger).
+    - Gradually add obstacle avoidance (other trains and wagons).
+    - Consider handling cases where the direct path is blocked
+
+--> Pour donner des directions à l'agent, on code dans agent.py (dossier à rendre) , on peut en créer plusieurs différents pour les comparer.
+
+adresse server alok :
+128.179.154.221
+adresse server local :
+127.0.0.1
